@@ -40,14 +40,14 @@ To create new test cases, a new `<test>.asm` file must be created. This file wil
 
 For those cases where a manual execution of one of the test cases is desired, the following steps must be followed:
 
-1- Assemble the test cases to be used. To do this, use the `asambler.py` script. This script takes as parameters the assembler file and the output directory. See the help for more details.
+1. Assemble the test cases to be used. To do this, use the `asambler.py` script. This script takes as parameters the assembler file and the output directory. See the help for more details.
 
-2- Once the script is executed, look in the folder for four files named `Bank0`, `Bank1`, `Bank2`, and `Bank3`.
+2. Once the script is executed, look in the folder for four files named `Bank0`, `Bank1`, `Bank2`, and `Bank3`.
 
-3- Open the circuit `s-mips.circ` in `Logisim`.
+3. Open the circuit `s-mips.circ` in `Logisim`.
 
-4- Activate the input named `Disable Dispatcher`.
+4. Activate the input named `Disable Dispatcher`.
 
-5- Then proceed to load the `Bank` files into the `RAM` component. To do this, look for the similar named tags in this component. For each `Bank` component (also called `RAM` in Logisim), right-click on it. Then click on load image. Finally, select the corresponding `Bank` file of the test case to be used. It is important to ensure that the correct banks have been used. The search when loading the image remembers separate addresses from the rest.
+5. Then proceed to load the `Bank` files into the `RAM` component. To do this, look for the similar named tags in this component. For each `Bank` component (also called `RAM` in Logisim), right-click on it. Then click on load image. Finally, select the corresponding `Bank` file of the test case to be used. It is important to ensure that the correct banks have been used. The search when loading the image remembers separate addresses from the rest.
 
-6- Toggle the clock. If all the steps were followed correctly, the microprocessor should start executing the instructions now stored in the RAM.
+6. Toggle the clock. If all the steps were followed correctly, the microprocessor should start executing the instructions now stored in the RAM.
